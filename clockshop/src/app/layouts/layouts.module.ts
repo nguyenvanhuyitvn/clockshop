@@ -7,12 +7,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LayoutsComponent } from './layouts.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ComponentsComponent } from './components/components.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, LayoutsComponent, DashboardComponent, ComponentsComponent],
   imports: [
     CommonModule,
-    LayoutsRoutingModule
+    LayoutsRoutingModule,
+    SlickCarouselModule,
+    OwlModule
   ]
 })
 export class LayoutsModule { }
